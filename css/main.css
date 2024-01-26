@@ -1,0 +1,70 @@
+@import "reset.css";
+@import "__vars.css";
+@import "fonts.css";
+
+
+
+.content__header{
+  min-height: 130px;
+  background: rgba(255, 255, 255, 0.40);
+  box-shadow: 0px 4px 7px 0px rgba(130, 130, 130, 0.25);
+}
+
+.logo{
+  padding-top: 20px;
+  text-align: center;
+
+  font-family: 'Advokat Modern Regular';
+  font-size: 30px;
+  color: var(--black);
+}
+
+.nav {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  display: flex;
+  gap: 90px;
+}
+
+.link__text{
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.header{
+  background-image: url(../img/backgraund01.png);
+  background-repeat: no-repeat;
+
+  min-height: 950px;
+}
+.title__header{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 17%;
+
+  flex-direction: column;
+}
+
+.title_header{
+  width: 750px;
+  
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 118.75%;
+  letter-spacing: 2.88px;
+}
+.title__name{
+  color: var(--white);
+  padding-top: 15px;
+  font-family: "Advokat Modern";
+  font-size: 96px;
+  font-weight: 400;
+}
