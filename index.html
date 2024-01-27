@@ -11,11 +11,20 @@
 </head>
 <body>
     <div class="wrapper">
+
+<!-- Начало шапки-->
         <header class="header">
             <div class="content__header">
                 <div class="container">
                     <p class="logo">ОАО"Прудинки"</p>
-                    <nav class="nav">
+                    <nav class="nav"> 
+                <!-- 
+                    1. Пересмотреть названия кнопок
+                    2. Сделать ховеры
+                    3. Придумать активный режим
+                    4. Настроить переходы
+                    
+                -->
                         <ul class="nav__item">
                             <li class="item__link"><a href="#" class="link__text">Главная</a></li>
                             <li class="item__link"><a href="#" class="link__text">Руководство</a></li>
@@ -31,9 +40,128 @@
                     <h1 class="title_header">Сельскохозяйственное предприятие</h1>
                     <h1 class="title__name">"Прудинки"</h1>
                 </div>  
-            </div>
-            
+            </div> 
         </header>
+<!--Конец шапки-->
+
+        <main class="main">
+<!--Начало блока со статистикой-->
+        <div class="static">
+            <div class="container">
+                    <h2 class="static__title h2">В нашем хозяйстве</h2>
+                    <div class="static__list">
+                        <!--Блок статистики №1-->
+                        <div class="static__item">
+                            <img src="./img/static/icon1.svg" alt="Иконка" class="item__img">
+                            <p class="item__text">Площади Пахоты, Га</p>
+                            <p class="item__figure">8000+</p>
+                        </div>
+                        <!--Блок статистики №2-->
+                        <div class="static__item">
+                            <img src="./img/static/icon1.svg" alt="Иконка" class="item__img">
+                            <p class="item__text">Площади Пахоты, Га</p>
+                            <p class="item__figure">8000+</p>
+                        </div>
+                        <!--Блок статистики №3-->
+                        <div class="static__item">
+                            <img src="./img/static/icon1.svg" alt="Иконка" class="item__img">
+                            <p class="item__text">Площади Пахоты, Га</p>
+                            <p class="item__figure">8000+</p>
+                        </div>
+                        <!--Блок статистики №4-->
+                        <div class="static__item">
+                            <img src="./img/static/icon1.svg" alt="Иконка" class="item__img">
+                            <p class="item__text">Площади Пахоты, Га</p>
+                            <p class="item__figure">8000+</p>
+                        </div>
+                        <!--Блок статистики №5-->
+                        <div class="static__item">
+                            <img src="./img/static/icon1.svg" alt="Иконка" class="item__img">
+                            <p class="item__text">Площади Пахоты, Га</p>
+                            <p class="item__figure">8000+</p>
+                        </div>
+                        
+                </div>
+
+            </div>
+        </div>
+<!--Конец блока со статистикой-->
+
+<!--Начало блока с фотографиями-->
+
+            <!-- Контейнер для галереи изображений -->
+            <div class="container">
+
+                <!-- Полноразмерные изображения с числовым текстом -->
+                <div class="mySlides">
+                    <img src="./img/Photo/photo01.jpg"class="mySlides__img">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/Photo/photo02.jpg"class="mySlides__img">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/Photo/photo03.jpg"class="mySlides__img">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/Photo/photo04.jpg"class="mySlides__img">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/Photo/photo01.jpg" class="mySlides__img">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/Photo/photo01.jpg" class="mySlides__img">
+                </div>
+
+                <!-- Next и prev кнопки -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Текст изображения -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Эскизы изображений -->
+                <div class="row">
+                    <!-- Эскизы изображений 1 -->
+                    <div class="column">
+                    <img class="demo cursor" src="./img/Photo/photo01.jpg" onclick="currentSlide(1)" alt="The Woods">
+                    </div>
+                    <!-- Эскизы изображений 2 -->
+                    <div class="column">
+                    <img class="demo cursor" src="./img/Photo/photo02.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <!-- Эскизы изображений 3 -->
+                    <div class="column">
+                    <img class="demo cursor" src="./img/Photo/photo03.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <!-- Эскизы изображений 4 -->
+                    <div class="column">
+                    <img class="demo cursor" src="./img/Photo/photo04.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <!-- Эскизы изображений 5 -->
+                    <div class="column">
+                    <img class="demo cursor" src="./img/Photo/photo01.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>
+                    <!-- Эскизы изображений 6 -->
+                    <div class="column">
+                    <img class="demo cursor" src="./img/Photo/photo01.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                </div>
+            </div>
+
+
+
+<!--Конец блока с фотографиями-->
+                
+                
+        </main>
     </div>
 </body>
+<script src="./js/photo.js"></script>
 </html>

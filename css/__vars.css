@@ -1,3 +1,18 @@
+/* переменные цвета */
+:root {
+  --black:#000;
+  --white: #fff;
+  --gray: #E3E3E3;
+}
+/*Общая настройка*/
+body{
+  font-family: Montserrat Alternates;
+  color: var(--black);
+}
+
+
+
+/* Общие стили для повторяющихся объектов, контейнеры и т.д*/
 .container {
     max-width: 1460px;
     margin-left: auto;
@@ -5,12 +20,13 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-/* переменные цвета */
-:root {
-    --black:#000;
-    --white: #fff;
-}
-/*-----------------*/
-body{
+
+.h2 {
   font-family: Montserrat Alternates;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 118.75%;
+  letter-spacing: 2.16px;
+
+  text-align: center;
 }
